@@ -10,7 +10,7 @@ var port = 3000;
 
 // MySQL DB Connection Information (remember to change this with our specific credentials)
 var connection = mysql.createConnection({
-  host: "localhost",
+  host: "127.0.0.1",
   user: "root",
   password: "",
   database: "wizard_schools_db"
