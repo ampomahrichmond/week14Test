@@ -49,7 +49,7 @@ app.get("/", function(req, res) {
 // Post route -> back to home
 app.post("/", function(req, res) {
   // Test it
-  // console.log('You sent, ' + req.body.task);
+  console.log('You sent, ' + req.body.task);
 
   // Test it
   // return res.send('You sent, ' + req.body.task);
