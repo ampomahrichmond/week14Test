@@ -42,4 +42,14 @@ $(function() {
       }
     );
   });
+
+  $("#delete").on('click', function(event) {
+    event.preventDefault();
+    $.ajax("api/cats/" + $(this).attr("data-id"),{
+      type: "DELETE"
+    }).done(function (res) {
+      console.log('should have came back with', res)
+      location.reload();
+    })
+  })
 });
